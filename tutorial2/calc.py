@@ -29,6 +29,20 @@ def pow(x, n):
         res *= x
     return res
 
+def gcd(a, b):
+    if a < 0: a *= -1
+    if b < 0: b *= -1
+
+    if a == 0: return b
+    if b == 0: return a
+
+    while b > 0:
+        temp = a
+        a = b
+        b = temp % b
+    
+    return a
+
 def main():
     pass
 
