@@ -16,6 +16,11 @@ def factorial(x):
         res *= i
     return res
 
+# not optimized
+def binomial_coefficient(n, m):
+    if m > n: return 0
+    return factorial(n) / (factorial(n-m) * factorial(m))
+
 def main():
     pass
 
